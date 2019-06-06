@@ -16,6 +16,7 @@ public class ImageUtil {
     public static String getImageAbsolutePath(Context context, Uri imageUri) {
         if (context == null || imageUri == null)
             return null;
+        // 提交
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT && DocumentsContract.isDocumentUri(context, imageUri)) {
             if (isExternalStorageDocument(imageUri)) {
                 String docId = DocumentsContract.getDocumentId(imageUri);
