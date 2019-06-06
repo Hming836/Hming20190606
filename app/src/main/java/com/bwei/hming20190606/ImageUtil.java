@@ -9,19 +9,9 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
-/**
- * @Author
- * @Date：2019/6/6
- * @Description：
- */
+
 public class ImageUtil {
-    /**
-     * 根据Uri获取图片绝对路径，解决Android4.4以上版本Uri转换
-     *
-     * @param context
-     * @param imageUri
-     * Please specify commit message
-     */
+
     @TargetApi(19)
     public static String getImageAbsolutePath(Context context, Uri imageUri) {
         if (context == null || imageUri == null)
